@@ -126,7 +126,30 @@
       <h1>Sinmun Journal App</h1>
     </header>
     <div class="container">
-      <h2>Past Journal Entries</h2>
+          <h2>Add New Journal Entry</h2>
+      <form method="POST" action="/addDrink">
+        <label for="drink_name">Journal Date</label>
+            <input name="drink_name" value="Enter Today's Date">
+        <br>
+        <label for="size">Journal Contents</label>
+          <input name="size" value="Add Today's Journal Contents"> 
+        <br>
+        <input type="submit" value="Add Journal" />
+    </form>
+    
+
+    <h2>Update The Contents of a Journal Entry</h2>
+    <center>
+      <% for (var i=0; i< drinkData.length; i++ ) { %>
+        <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">  
+          <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>) 
+          <input type="submit" value="update"> 
+        </form>
+        <br/>
+      <% } %> 
+      </center>
+      
+            <h2>Past Journal Entries</h2>
 <div class="dropdown">
       <button class="dropbtn">Dropdown</button>
       <div class="dropdown-content">
@@ -143,25 +166,4 @@
             <% } %>
         </ul>
       </div>
-
-      <h2>Add New Journal Entry</h2>
-      <form method="POST" action="/addDrink">
-        <label for="drink_name">Journal Date</label>
-            <input name="drink_name" value="Enter Today's Date">
-        <br>
-        <label for="size">Journal Contents</label>
-          <input name="size" value="Add Today's Journal Contents"> 
-        <br>
-        <input type="submit" value="Add Journal" />
-    </form>
-    <h2>Update The Contents of a Journal Entry</h2>
-    <center>
-      <% for (var i=0; i< drinkData.length; i++ ) { %>
-        <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">  
-          <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>) 
-          <input type="submit" value="update"> 
-        </form>
-        <br/>
-      <% } %> 
-      </center>
       
