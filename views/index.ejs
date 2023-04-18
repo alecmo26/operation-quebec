@@ -137,6 +137,23 @@
           </li>
         <% } %>
       </ul>
+      
+      <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <ul>
+          <% for (var i=0; i< drinkData.length; i++ ) { %>
+            <li>
+              <span>
+                <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
+              </span>
+              <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>">
+                <button type="submit">Delete</button>
+              </form>
+            </li>
+            <% } %>
+        </ul>
+      </div>
 
       <h2>Add a New Drink</h2>
       <form method="POST" action="/addDrink">
