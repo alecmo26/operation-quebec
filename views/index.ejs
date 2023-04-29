@@ -140,17 +140,11 @@
 
     <h2>Update The Contents of a Journal Entry</h2>
     <center>
-    <form method="POST" action="/addupDrink">
-          <label for="updsize">Update Journal Contents</label>
-          <input name="updsize" value="Update Journal Contents"> 
-          <input type="submit" value="update"> 
-          </form>
       <% for (var i=0; i< drinkData.length; i++ ) { %>
         <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">  
           <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>) 
           <label for="updsize">Update Journal Contents</label>
           <input name="updsize" id = "updsize" value="Update Journal Contents"> 
-          <input type="submit" value="update"> 
           <input type="submit" value="update"> 
         </form>
         <br/>
