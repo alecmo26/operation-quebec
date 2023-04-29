@@ -96,6 +96,25 @@ app.post('/addDrink', async (req, res) => {
 
 })
 
+app.post('/addupDrink', async (req, res) => {
+
+  try {
+    // console.log("req.body: ", req.body) 
+    client.connect; 
+    const collection = client.db("chillAppz").collection("updrinkz");
+    await collection.insertOne(req.body);
+      
+    res.redirect('/');
+  }
+  catch(e){
+    console.log(error)
+  }
+  finally{
+   // client.close()
+  }
+
+})
+
 
 app.post('/deleteDrink/:id', async (req, res) => {
 
