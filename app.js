@@ -101,7 +101,7 @@ app.post('/addupDrink', async (req, res) => {
   try {
     // console.log("req.body: ", req.body) 
     client.connect; 
-    const collection = client.db("chillAppz").collection("updrinkz");
+    const collection = client.db("chillAppz").collection("drinkz");
     await collection.insertOne(req.body);
       
     res.redirect('/');
