@@ -9,7 +9,7 @@ section {
   
   .card{
     background: #ffffff ;
-    border-width: 0.2cm;
+    border-width: 0.1cm;
   }
   .card-body{
     position: center;
