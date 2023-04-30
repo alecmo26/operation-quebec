@@ -1,6 +1,8 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 section {
+    clear: both;
+    display: none;
     position: center;
     background: #D9F0FF ;
   }
@@ -34,6 +36,9 @@ label {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+}
+#tab1 {
+  display: none;
 }
 #tab2 {
   display: none;
