@@ -8,7 +8,7 @@ section {
   }
   
   .card{
-    background: #D9F0FF ;
+    background: #ffffff ;
     border-width: 0.2cm;
   }
   .card-body{
@@ -22,8 +22,8 @@ section {
  {
   display: block;
   padding: 20px;
-  background: #D9F0FF ;
-  color: #ffffff;
+  background: #ffffff ;
+  color: #000000;
   border-bottom: 4px solid #14c33d ;
 }
 label {
