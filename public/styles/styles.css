@@ -37,18 +37,6 @@ section {
   display: none;
 }
 
-html{
-  background: #D9F0FF;;
-}
-
-body{
-  margin: 0;
-  padding: 0;
-}    
-
-body,button {
-  font-family: 'Smythe', cursive;
-}
 body {
         margin: 0;
         font-family: Arial, sans-serif;
