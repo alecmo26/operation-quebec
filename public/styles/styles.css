@@ -1,6 +1,7 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 section {
+    display: none;
     position: center;
     background: #D9F0FF ;
   }
@@ -23,7 +24,19 @@ section {
   color: #0c0808;
   border-bottom: 2px solid #14c33d ;
 }
-
+label {
+  font-weight: 700;
+  font-size: 18px;
+  display: auto;
+  float: left;
+  width: 33.33%;
+  padding: 1.5em;
+  /*tab text colors*/
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
 body {
         margin: 0;
         font-family: Arial, sans-serif;
