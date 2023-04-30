@@ -35,6 +35,9 @@ label {
   text-decoration: none;
   text-align: center;
 }
+#tab2 {
+  display: none;
+}
 body {
         margin: 0;
         font-family: Arial, sans-serif;
