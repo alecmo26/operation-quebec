@@ -1,7 +1,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 section {
-    display: none;
     position: center;
     background: #D9F0FF ;
   }
