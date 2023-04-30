@@ -52,7 +52,7 @@
         <ul>
           <% for (var i=0; i< drinkData.length; i++ ) { %>
             <li>
-              <span style= "max-width:10ch;">
+              <span style= "display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width:10ch;">
                 <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
               </span>
               <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>">
