@@ -19,7 +19,7 @@
 
     <input id="tab2" type="radio" name="tabs">
     <label for="tab2"><span>View and Update past Journals</span></label>
-
+<section id="content1" class="tab-content">
           <h2>Add New Journal Entry</h2>
       <form method="POST" action="/addDrink">
         <label for="drink_name">Journal Date</label>
@@ -30,8 +30,8 @@
         <br>
         <input type="submit" value="Add Journal" />
     </form>
-    
-
+ </section>
+ <section id="content2" class="tab-content">
     <h2>Update The Contents of a Journal Entry</h2>
     <center>
       <% for (var i=0; i< drinkData.length; i++ ) { %>
@@ -62,4 +62,4 @@
             <% } %>
         </ul>
       </div>
-      
+ </section>
