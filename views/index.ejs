@@ -34,7 +34,8 @@
  <section id="content2" class="tab-content">
     <h2>Update The Contents of a Journal Entry</h2>
       <% for (var i=0; i< drinkData.length; i++ ) { %>
-        <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">  
+      <div class="card">
+        <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: center"> 
           <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>) 
           <label for="updsize">Update Journal Contents</label>
           <input name="updsize" id = "updsize" value="Update Journal Contents"> 
@@ -42,6 +43,7 @@
         </form>
         <br/>
       <% } %> 
+     </div>
 
       
             <h2>Past Journal Entries</h2>
