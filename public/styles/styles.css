@@ -1,7 +1,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 section {
-    clear: both;
     display: none;
     position: center;
     background: #D9F0FF ;
@@ -18,9 +17,7 @@ section {
 
 #tab1:checked~#content1,
 #tab2:checked~#content2,
-#tab3:checked~#content3,
-#tab4:checked~#content4,
-#tab5:checked~#content5 
+#tab3:checked~#content3
  {
   display: block;
   padding: 20px;
