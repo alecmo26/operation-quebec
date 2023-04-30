@@ -52,8 +52,8 @@
         <ul>
           <% for (var i=0; i< drinkData.length; i++ ) { %>
             <li>
-              <span style= "display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width:10ch;">
-                <%= drinkData[i].drink_name %>
+              <span style= "display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width:25ch;">
+                <%= drinkData[i].drink_name %>  <%= drinkData[i].size %>
               </span>
               <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>">
                 <button type="submit">Delete</button>
