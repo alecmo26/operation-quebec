@@ -12,7 +12,14 @@
     <header>
       <h1>Sinmun Journal App</h1>
     </header>
-    <div class="container">
+    <div class="tab_container">
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1"><span>Create New Journal Entry</span></label> 
+
+
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2"><span>View and Update past Journals</span></label>
+
           <h2>Add New Journal Entry</h2>
       <form method="POST" action="/addDrink">
         <label for="drink_name">Journal Date</label>
