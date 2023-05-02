@@ -16,6 +16,7 @@ section {
     display: inline-block;
     width: 33%;
     height: 100%;
+    text-align: center;
 }
 
   .card{
