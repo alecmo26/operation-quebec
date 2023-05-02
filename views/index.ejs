@@ -29,12 +29,16 @@
           <textarea name="size"  rows= "3" cols= "50" placeholder="Add Today's Journal Contents"> </textarea>
         <br>
         <label for="size">Pick Mood for Entry</label>
+        <div id= "moodselect">
+         <div class="moodbutton">
         <input name="pickmood" id="happy" value= "😃" type="radio" hidden>
         <label for="happy" display= "inline-block"><span>😃</span></label>
         <input name="pickmood" id="mehh" value= "😐" type="radio" hidden>
         <label for="mehh" display= "inline-block"><span>😐</span></label>
         <input name="pickmood" id="sad" value= "😞" type="radio" hidden>
         <label for="sad" display= "inline-block"><span>😞</span></label>
+         </div>
+        </div>
         <br>
         <input type="submit" value="Add Journal" />
     </form>
