@@ -15,10 +15,10 @@ section {
     display: block;
     width: 33%;
     text-align: center;
-    float: left;
-    padding: 1.9em;
+    float: center;
+    padding: 2em;
     background-color: #4983af;
-    height:16px;
+    height:18px;
 }
 
   .card{
