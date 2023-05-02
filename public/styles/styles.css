@@ -13,7 +13,9 @@ section {
       overflow-x: auto;
 }
 .moodbutton {
-    display: inline-block;
+    display: auto;
+    float: left;
+    padding: 1.5em;
     width: 33%;
     height: 100%;
     text-align: center;
