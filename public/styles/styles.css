@@ -14,7 +14,7 @@ section {
       position: center;
 }
 .moodbutton {
-    display: auto;
+    display: inline-block;
     float: left;
     padding: 1.5em;
     width: 20%;
