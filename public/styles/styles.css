@@ -16,8 +16,10 @@ section {
     text-align: center;
     float: left;
     padding: 1.6em;
-    background-color: #4983af;
 }
+.moodbutton:hover {
+        background-color: #4983af;
+      }
 
   .card{
     background: #ffffff ;
