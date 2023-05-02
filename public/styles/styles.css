@@ -7,8 +7,8 @@ section {
     background: #D9F0FF ;
   }
   #moodselect {
-      width: 160%;
-      height:100px;
+      width: 100%;
+      height:80px;
       white-space: nowrap;
       overflow-x: auto;
       position: center;
